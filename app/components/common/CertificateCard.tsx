@@ -17,7 +17,7 @@ export default function CertificateCard({
       <img
         src={certificate.image}
         alt={certificate.title}
-        className="w-full h-180 object-cover"
+        className="w-full h-72 md:h-96 object-cover"
       />
 
       <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80 group-hover:opacity-90 transition duration-300" />

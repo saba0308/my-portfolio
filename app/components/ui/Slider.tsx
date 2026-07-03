@@ -36,7 +36,7 @@ export default function Slider({ children, itemsPerView = 1 }: SliderProps) {
           }}
         >
           {children.map((child, index) => (
-            <div key={index} style={{ width: `${100 / itemsPerView}%` }} className="flex-shrink-0 px-4">
+            <div key={index} style={{ width: `${100 / itemsPerView}%` }} className="flex-shrink-0 px-4 sm:px-2">
               {child}
             </div>
           ))}
@@ -46,7 +46,7 @@ export default function Slider({ children, itemsPerView = 1 }: SliderProps) {
       {/* Navigation Buttons */}
       <button
         onClick={handlePrev}
-        className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 lg:-translate-x-8 bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white p-2 rounded-full shadow-lg transition"
+        className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 -translate-x-0 sm:-translate-x-2 bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white p-2 rounded-full shadow-lg transition"
         aria-label="Previous slide"
       >
         ◀
@@ -54,7 +54,7 @@ export default function Slider({ children, itemsPerView = 1 }: SliderProps) {
 
       <button
         onClick={handleNext}
-        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 lg:translate-x-8 bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white p-2 rounded-full shadow-lg transition"
+        className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 translate-x-0 sm:translate-x-2 bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white p-2 rounded-full shadow-lg transition"
         aria-label="Next slide"
       >
         ▶

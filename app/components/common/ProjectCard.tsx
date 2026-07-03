@@ -18,7 +18,7 @@ export default function ProjectCard({ project }: Props) {
       <img
         src={project.image}
         alt={project.title}
-        className="h-120 w-full object-cover"
+        className="h-72 md:h-96 w-full object-cover"
       />
 
       <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80 group-hover:opacity-90 transition duration-300" />

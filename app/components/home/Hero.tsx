@@ -51,7 +51,7 @@ const imageVariants = {
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center">
+    <section className="min-h-screen flex items-center pt-20 sm:pt-24">
 
       <Container>
 
@@ -127,7 +127,7 @@ export default function Hero() {
             viewport={{ once: true, amount: 0.5 }}
           >
             <motion.div
-              className="relative w-80 h-80 rounded-2xl overflow-hidden shadow-2xl"
+              className="relative w-full max-w-md h-72 md:w-80 md:h-80 rounded-2xl overflow-hidden shadow-2xl"
               variants={imageVariants}
               whileHover="hover"
             >
